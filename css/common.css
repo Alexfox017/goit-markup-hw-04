@@ -1,17 +1,11 @@
 body {
-  background: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
+  background-color: #fff;
   color: #434455;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
 }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-style: normal;
+.accent {
+  color: #4d5ae5;
 }
 
 h1,
@@ -19,35 +13,37 @@ h2,
 h3,
 h4,
 h5,
-h5,
+h6 {
+  margin: 0;
+}
+
 p {
   margin: 0;
 }
-
 ol,
 ul {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-
-button {
-  cursor: pointer;
-  border: none;
-}
-
-/* Main styles */
-
-.section {
-  padding: 120px 0;
-}
-
 .sr-only {
   position: absolute;
   white-space: nowrap;
@@ -60,45 +56,18 @@ button {
   clip-path: inset(100%);
   margin: -1px;
 }
-
-/* Logo styles */
-.logo-link {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.33;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #2e2f42;
-
-  padding: 24px 0;
-}
-.accent {
-  color: #4d5ae5;
-}
-
-/* Contacts styles */
-.contacts {
-  margin-left: auto;
-  padding-right: 15px;
-}
-.contacts-list {
-  display: flex;
-  gap: 40px;
-}
-.contacts-item {
-}
-.contacts-link {
-  display: block;
-  padding: 24px 0;
-}
-.contacts-link:hover,
-.contacts-link:focus {
-  color: #404bbf;
-}
-
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
+  /* border: 2px solid red;
+    outline-offset: -2px; */
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
